@@ -1,0 +1,121 @@
+.masthead {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.site-header {
+  background-color: #171717;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.space-class {
+  height: 100px;
+}
+.tight-container {
+  padding: 0 50px;
+}
+
+.custom-container {
+  max-width: 800px;
+}
+
+footer{
+    width:100%;
+    bottom: 0;
+    min-height: 50px;    
+    background-color: #171717;
+    color: #999;
+    position: relative;
+}
+.footer-text {
+  margin-top: 15px;
+}
+
+/* Line */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  background-image: -webkit-linear-gradient(left, #333, #ccc, #333);
+  background-image: -moz-linear-gradient(left, #333, #ccc, #333);
+  background-image: -ms-linear-gradient(left, #333, #ccc, #333);
+  background-image: -o-linear-gradient(left, #333, #ccc, #333);
+}
+
+/* Fonts */
+@font-face {
+   font-family: regularFont;
+   src: url("../fonts/Bitter-Regular.otf") format("opentype");
+}
+
+@font-face {
+   font-family: boldFont;
+   src: url("../fonts/Bitter-Bold.otf") format("opentype");
+}
+
+* {
+   font-family: regularFont;
+   font-size: 14px;
+}
+
+h1 {
+  font-family: boldFont;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 7vmax;
+}
+
+@media screen and (max-width: 1600px) {
+  h1{ font-size: 52px; }
+}
+
+/* Changsd bootstrap navbar */
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
